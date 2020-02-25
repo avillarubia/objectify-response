@@ -1,8 +1,8 @@
 # objectify-response
 
--Returns 200 from all server responses regardless the server returns with status code 400 and up.
--Helps you avoid sending 400 and up status codes to your client-side applications.
--Gives you cleaner responses displayed browser console.
+- Returns 200 from all server responses regardless the server returns with status code 400 and up.
+- Helps you avoid sending 400 and up status codes to your client-side applications.
+- Gives you cleaner responses displayed browser console.
 
 ## Installation
 

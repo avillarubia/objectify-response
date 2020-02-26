@@ -26,17 +26,22 @@ var objectifyResp = require('objectify-response'); // ES5 with npm
 ```js
 router.post('/', async (req, res) => {
     const token = generateToken()
+
     return objectifyResp(res, token)
 })
 ```
 
 ```js
-    ...
-    return objectifyResp(res, 'Item is not found.', 404)
+router.post('/', async (req, res) => {
+    const { item } = getItem()
+
+    if(!item)
+        return objectifyResp(res, 'Item is not found.', 404)
+})
 ```
 
 ## Returns
-Returns 200 from all server responses.
+Returns 200 from all server responses regardless the server returns 400 and up.
 
 **Example return from the first usage example.**
 

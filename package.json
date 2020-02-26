@@ -1,6 +1,6 @@
 {
   "name": "objectify-response",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "details like code, status, message in an object",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "keywords": [
     "objectify",
-    "response"
+    "response",
+    "status",
+    "code"
   ],
   "author": "aljohn villarubia",
   "license": "ISC",

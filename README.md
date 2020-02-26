@@ -13,12 +13,12 @@ npm install --save objectify-response
 ## Importing
 
 ```js
-import PropTypes from 'objectify-response'; // ES6
-var PropTypes = require('objectify-response'); // ES5 with npm
+import objectifyResp from 'objectify-response'; // ES6
+var objectifyResp = require('objectify-response'); // ES5 with npm
 ```
 
 ## Dependencies
-```http-status: 1.4.2```
+```http-status```
 
 ## Usage
 **Example**

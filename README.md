@@ -40,6 +40,15 @@ router.post('/', async (req, res) => {
 })
 ```
 
+```js
+router.post('/', async (req, res) => {
+    const object = {}
+
+    if(!item)
+        return objectifyResp(res, object, 404)
+})
+```
+
 ## Returns
 Returns 200 from all server responses regardless the server returns 400 and up.
 
@@ -49,7 +58,7 @@ HTTP/1.1 200 OK
 ```js
 { 
     code: 200
-    name: 'OK' //auto generated name of the error based on the error code.
+    name: 'OK' //auto generated name of the error based on the provided error code.
     message: 'Returns the generated token string'
 }
 ```
@@ -60,7 +69,18 @@ HTTP/1.1 200 OK
 ```js
 { 
     code: 404
-    name: 'NOT_FOUND' //auto generated name of the error based on the error code.
+    name: 'NOT_FOUND' //auto generated name of the error based on the provided error code.
     message: 'Item is not found.'
+}
+```
+
+**Example return from the third usage example.**
+
+HTTP/1.1 200 OK
+```js
+{ 
+    code: 404
+    name: 'NOT_FOUND' //auto generated name of the error based on the provided error code.
+    message: {}
 }
 ```
